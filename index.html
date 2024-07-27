@@ -9,8 +9,11 @@
 </head>
 <body>
     <header data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header.partial.html"></header>
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.catalogue.partial.html"></section>
-
+    <main class="main">
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.catalogue.partial.html"></section>
+        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.carousel-top.partials.html"></section>
+    </main>
     <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.footer.partial.html"></footer>
 </body>
+<script src="js/index.js"></script>
 </html>
