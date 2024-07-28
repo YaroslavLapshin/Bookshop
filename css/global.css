@@ -1,11 +1,64 @@
-* {
+*, ::before, ::after{
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
-    text-decoration: none;
     color: var(--primary-text-color);
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+body{
+    background-color: var(--primary-background-color);
+    height: 100%;
+    line-height: 1;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+    font-size: 16px;
+}
+
+textarea, button, input{
+    font-weight: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-family: inherit;
+}
+
+button{
+    cursor: pointer;
+    background-color: inherit;
+}
+
+.container{
+    max-width: 1230px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    flex-grow: 1;
+}
 :root{
     --primary-background-color: #f5f4f0;
     --primary-text-color: black;
@@ -17,18 +70,4 @@
     --font-10px: 10px;
     --font-14px: 14px;
     --font-18px: 18px;
-}
-
-body{
-    background-color: var(--primary-background-color);
-}
-
-.container{
-    max-width: 1200px;
-    margin: auto;
-}
-
-img{
-    height: 100%;
-    width: 100%;
 }

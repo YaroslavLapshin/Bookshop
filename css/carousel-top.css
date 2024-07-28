@@ -1,4 +1,4 @@
-.carousel-top {
+/* .carousel-top {
     position: relative;
     min-height: 467px;
     overflow: hidden;
@@ -7,7 +7,7 @@
 .carousel-top__slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 300%; /* Adjust based on the number of slides */
+    width: 300%;
 }
 
 .carousel-top__slide {
@@ -68,4 +68,4 @@
 
 .carousel-top__dot.active {
     background-color: rgba(255, 255, 255, 0.9);
-}
+} */

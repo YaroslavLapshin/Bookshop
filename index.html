@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header.partial.html"></header>
-    <main class="main">
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.catalogue.partial.html"></section>
-        <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.carousel-top.partials.html"></section>
-    </main>
-    <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.footer.partial.html"></footer>
+    <div class="wrapper">
+        <header data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header.partial.html"></header>
+        <main class="page">
+            main
+            <!-- <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.catalogue.partial.html"></section>
+            <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.carousel-top.partials.html"></section> -->
+        </main>
+        <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.footer.partial.html"></footer>
+    </div>
 </body>
 <script src="js/index.js"></script>
 </html>
