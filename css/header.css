@@ -1,7 +1,7 @@
 .header {
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 2;
     background-color: var(--white-color);
 }
 
@@ -9,6 +9,11 @@
     min-height: 80px;
     display: flex;
     align-items: center;
+    transform: translateY(-100vh);
+}
+
+.header__nav.active {
+	transform: translateY(0);
 }
 
 .header__top::before {
@@ -17,6 +22,49 @@
     height: 35px;
     width: 100%;
     background: url("../img/header/Header__sale.webp") no-repeat center;
+}
+
+.menu-button {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	z-index: 9999;
+	overflow: hidden;
+	border: none;
+	border-bottom: 2px solid #222;
+	background: transparent;
+	cursor: pointer;
+}
+
+.menu-button:before,
+.menu-button:after
+ {
+	content:'';
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	background-color: #222;
+	transition: transform 0.5s;
+}
+
+.menu-button:before {
+	top: 30%;
+}
+.menu-button:after {
+	top: 67%;
+}
+
+.menu-button.active {
+    border-bottom: none;
+  }
+  .menu-button.active:before {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+  }
+  .menu-button.active:after {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
 }
 
 .menu__list {
