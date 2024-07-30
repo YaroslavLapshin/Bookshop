@@ -1,5 +1,9 @@
 @import "global.css";
 @import "header.css";
 @import "catalogue.css";
-@import "carousel-top.css";
+@import "swiper-hero.css";
+@import "new-carousel.css";
 @import "font.css";
+@import "blog.css";
+@import "advantages.css";
+@import "footer.css";

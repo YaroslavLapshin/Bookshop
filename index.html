@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookStore</title>
-    <script src="https://unpkg.com/htmx.org@2.0.1" integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/index.css">
+    
 </head>
 <body>
     <div class="wrapper">
-        <header data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header.partial.html"></header>
+        <header data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.header.partials.html"></header>
         <main class="page">
-            main
-            <!-- <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.catalogue.partial.html"></section>
-            <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.carousel-top.partials.html"></section> -->
+            <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.swiper-hero.partials.html"></section>
+            <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.new-carousel.partials.html"></section>
+            <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.blog.partials.html"></section>
+            <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.advantages.partials.html"></section>
         </main>
-        <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.footer.partial.html"></footer>
+        <footer data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.footer.partials.html"></footer>
     </div>
 </body>
+<script src="https://unpkg.com/htmx.org@2.0.1" integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/" crossorigin="anonymous"></script>
 <script src="js/index.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </html>
